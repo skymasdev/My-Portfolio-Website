@@ -31,7 +31,7 @@ This portfolio website is designed to highlight my expertise in web development.
 ## Installation
 1. Clone the repository:
    ```sh
-   git clone https://github.com/skymasdev/portfolio-website.git
+   git clone https://github.com/skymasdev/My-Portfolio-Website.git
    ```
 2. Navigate to the project folder:
    ```sh
