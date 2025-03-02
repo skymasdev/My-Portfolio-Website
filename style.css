@@ -149,7 +149,7 @@ nav {
   justify-content: center;
   max-width: 800px;
   margin: 0 auto;
-  background: f9f9f9;
+  background: #f9f9f9;
   padding: 30px;
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
@@ -320,6 +320,13 @@ textarea {
   border-radius: 4px;
 }
 
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+  box-shadow: 0 0 2px #2c3e50;
+}
+
 button {
   padding: 10px;
   background-color: #2c3e50;
@@ -386,10 +393,10 @@ button:hover {
 }
 
 /* Responsive Styles */
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
   .navbar {
-    position: relative;
-    flex-direction: row;
+
+    width: 100vh;
   }
 
   .navbar ul {
@@ -447,5 +454,116 @@ button:hover {
 
   #footer-section {
     margin-top: 30px;
+  }
+}
+
+@media only screen and (max-width: 430px) {
+
+  .navbar {
+    width: 100%;
+    padding: 5px 0;
+    overflow-x: none;
+  }
+  .navbar ul {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  .navbar ul li:last-child a {
+    margin-left: 10px;
+  }
+
+
+  #project {
+    width: 100%;
+    overflow-x: hidden;
+  }
+
+
+  .card {
+    max-width: 200px;
+  }
+
+
+  #text-container {
+    font-size: 2rem;
+  }
+} */
+
+@media (max-width: 768px) {
+  /* Remove horizontal scrolling */
+  html,
+  body {
+    overflow-x: hidden;
+  }
+
+  /* Adjust navbar to fit the screen properly */
+  .navbar {
+    position: relative;
+    width: 100%;
+    padding: 15px 20px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .navbar ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+    width: 100%;
+  }
+
+  .navbar li {
+    margin: 0.5rem 0;
+  }
+
+  .hero {
+    padding-top: 40px; /* Ensure navbar doesn't stick too close */
+  }
+
+  .about-container {
+    flex-direction: column; /* Stack image & text */
+    text-align: center;
+  }
+
+  .separator {
+    display: none; /* Hide the separator */
+  }
+
+  .about-text {
+    text-align: center; /* Center the text on mobile */
+  }
+}
+
+@media (max-width: 430px) {
+  /* Ensure no white space */
+
+  .navbar {
+    width: 100%;
+    padding: 10px 15px;
+  }
+
+  .navbar ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1rem;
+    width: 100%;
+  }
+
+  .navbar ul li:last-child a {
+    margin-left: 5px;
+  }
+
+  .hero {
+    padding-top: 60px;
+  }
+
+  #text-container {
+    font-size: 2rem;
+    position: absolute;
+    white-space: nowrap;
   }
 }
