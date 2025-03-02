@@ -393,72 +393,7 @@ button:hover {
 }
 
 /* Responsive Styles */
-/* @media (max-width: 768px) {
-  .navbar {
-
-    width: 100vh;
-  }
-
-  .navbar ul {
-    width: 100%;
-    flex-direction: row;
-    justify-content: center;
-    gap: 2rem;
-  }
-
-  .navbar li {
-    margin: 0.5rem 0;
-  }
-
-  #text-container {
-    font-size: 2.2rem;
-    position: absolute;
-    white-space: nowrap;
-    overflow: hidden;
-    padding: 10px;
-  }
-
-  #subtitle {
-    font-size: 1.5rem;
-    margin-top: 3rem;
-  }
-
-  #subtitle .script {
-    font-size: 2.5rem;
-  }
-
-  .cta-button {
-    padding: 12px 28px;
-    font-size: 0.9rem;
-    margin-top: 3rem;
-  }
-
-  .contact-section {
-    width: 100%;
-    max-width: 400px;
-  }
-
-  .about-container {
-    flex-direction: column;
-    text-align: center;
-    padding: 20px;
-  }
-
-  .separator {
-    display: none;
-  }
-
-  .about-text {
-    text-align: center;
-  }
-
-  #footer-section {
-    margin-top: 30px;
-  }
-}
-
 @media only screen and (max-width: 430px) {
-
   .navbar {
     width: 100%;
     padding: 5px 0;
@@ -473,35 +408,30 @@ button:hover {
     margin-left: 10px;
   }
 
-
   #project {
     width: 100%;
     overflow-x: hidden;
   }
 
-
   .card {
     max-width: 200px;
   }
 
-
   #text-container {
     font-size: 2rem;
   }
-} */
+}
 
 @media (max-width: 768px) {
-  /* Remove horizontal scrolling */
-  html,
+  ahtml,
   body {
     overflow-x: hidden;
   }
 
-  /* Adjust navbar to fit the screen properly */
   .navbar {
     position: relative;
     width: 100%;
-    padding: 15px 20px; 
+    padding: 15px 20px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -520,26 +450,24 @@ button:hover {
   }
 
   .hero {
-    padding-top: 40px; /* Ensure navbar doesn't stick too close */
+    padding-top: 40px;
   }
 
   .about-container {
-    flex-direction: column; /* Stack image & text */
+    flex-direction: column;
     text-align: center;
   }
 
   .separator {
-    display: none; /* Hide the separator */
+    display: none;
   }
 
   .about-text {
-    text-align: center; /* Center the text on mobile */
+    text-align: center;
   }
 }
 
 @media (max-width: 430px) {
-  /* Ensure no white space */
-
   .navbar {
     width: 100%;
     padding: 10px 15px;
