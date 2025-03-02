@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kevin Dixon | Portfolio Website</title>
+    <title>Kevin Dixon | Portfolio </title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -17,23 +18,24 @@
     <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <!--Navigation Bar and Hero Section-->
     <section class="hero" id="hero">
-            <nav class="navbar">
-                <ul>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#skill">Skills</a></li>
-                    <li><a href="#project">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-            <div class="header-content">
-                <div id="text-container">My Name is Kevin Osayabamwen</div>
-                <p id="subtitle">Exploring, learning, and creating — <span class="script">one website at a time.</span>
-                </p>
-                <a href="#project" class="cta-button">View My Work</a>
-            </div> 
+        <nav class="navbar">
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skill">Skills</a></li>
+                <li><a href="#project">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="header-content">
+            <div id="text-container">My Name is Kevin Osayabamwen</div>
+            <p id="subtitle">Exploring, learning, and creating — <span class="script">one website at a time.</span>
+            </p>
+            <a href="#project" class="cta-button">View My Work</a>
+        </div>
     </section>
 
     <!-- About Section Content -->
@@ -118,26 +120,28 @@
     <!-- contact form section -->
     <section id="contact" class="contact-section">
         <h2>Contact Me</h2>
-        <form action="https://formsubmit.co/officialskymas@email.com" method="POST" class="contact-form">
+        <form action="https://api.staticforms.xyz/submit" method="POST" class="contact-form">
+            <input type="hidden" name="accessKey" value="aada1091-579c-44e6-99ab-ac4cbf4feb56">
             <label for="name">Name:</label>
             <input type="text" id="name" name="name" required placeholder="Your name">
-
             <label for="email">Email:</label>
             <input type="email" id="email" name="email" required placeholder="Your email address">
-
             <label for="message">Message:</label>
             <textarea id="message" name="message" rows="4" required placeholder="Your Message"></textarea>
+            <input type="text" name="honeypot" style="display: none;">
 
             <button type="submit">Send Message</button>
         </form>
+
+        <div id="toast" class="toast">Form submitted successfully!</div>
     </section>
-    
-<!--Footer Section-->
+
+    <!--Footer Section-->
     <footer class="footer">
         <div class="footer-container">
             <div id="footer-section" class="contact-info">
                 <h3>Contact</h3>
-                <p>Email: <a href="mailto:fficialskymas@gmail.com">officialskymas@gmail.com</a></p>
+                <p>Email: <a href="mailto:officialskymas@gmail.com">officialskymas@gmail.com</a></p>
                 <p>Phone: <a href="tel:+39 389 645 9049">+39 389 645 9049</a></p>
             </div>
             <div id="footer-section" class="social-icons">
