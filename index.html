@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kevin Dixon | Portfolio Website</title>
+    <title>Kevin Dixon | Portfolio </title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -20,6 +20,7 @@
 </head>
 
 <body>
+    <!--Navigation Bar and Hero Section-->
     <section class="hero" id="hero">
         <nav class="navbar">
             <ul>
@@ -27,17 +28,15 @@
                 <li><a href="#skill">Skills</a></li>
                 <li><a href="#project">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
-
             </ul>
         </nav>
         <div class="header-content">
             <div id="text-container">My Name is Kevin Osayabamwen</div>
-            <p id="subtitle">Exploring, learning, and creating — <span class="script">one website at a time.</span></p>
+            <p id="subtitle">Exploring, learning, and creating — <span class="script">one website at a time.</span>
+            </p>
             <a href="#project" class="cta-button">View My Work</a>
         </div>
     </section>
-
-
 
     <!-- About Section Content -->
     <section id="about">
@@ -87,7 +86,6 @@
         </div>
     </section>
 
-
     <!-- project Section -->
     <section id="project">
         <h2 class="project-title">Projects</h2>
@@ -99,7 +97,7 @@
                     <p>This project entails about a fruit market that sells fruits and vegetables and also do
                         door-to-door delivery. <br>Technologies used:
                         HTML, Tailwind CSS, Javascript</p>
-                    <a href="https://github.com/skymasdev/Frutify-Landing-website.git" class="btn" target="_blank">View
+                    <a href="https://frutify.netlify.app/" class="btn" target="_blank">View
                         on <i class="fa-brands fa-github"></i></a>
                 </div>
             </div>
@@ -111,11 +109,10 @@
                         <br>Technologies used:
                         HTML, CSS, Javascript
                     </p>
-                    <a href="https://github.com/skymasdev/Savory-Embassy-Landing-Page" class="btn" target="_blank">View
+                    <a href="https://savoryembassy.netlify.app/" class="btn" target="_blank">View
                         on <i class="fa-brands fa-github"></i></a>
                 </div>
             </div>
-
         </div>
         </div>
     </section>
@@ -123,70 +120,52 @@
     <!-- contact form section -->
     <section id="contact" class="contact-section">
         <h2>Contact Me</h2>
-        <form action="https://formsubmit.co/officialskymas@email.com" method="POST" class="contact-form">
+        <form action="https://api.staticforms.xyz/submit" method="POST" class="contact-form">
+            <input type="hidden" name="accessKey" value="aada1091-579c-44e6-99ab-ac4cbf4feb56">
             <label for="name">Name:</label>
             <input type="text" id="name" name="name" required placeholder="Your name">
-
             <label for="email">Email:</label>
             <input type="email" id="email" name="email" required placeholder="Your email address">
-
             <label for="message">Message:</label>
             <textarea id="message" name="message" rows="4" required placeholder="Your Message"></textarea>
+            <input type="text" name="honeypot" style="display: none;">
 
             <button type="submit">Send Message</button>
         </form>
 
+        <div id="toast" class="toast">Form submitted successfully!</div>
     </section>
 
-
-
-
-    <!-- <footer id="contact-info">
-        <div class="contact-info">
-            <a href="tel:+39 389 645 9049" class="phone">CALL:<br> +39 389 645 9049</a>
-            <a href="mailto:fficialskymas@gmail.com" class="email"> EMAIL:<br>officialskymas@gmail.com</a>
+    <!--Footer Section-->
+    <footer class="footer">
+        <div class="footer-container">
+            <div id="footer-section" class="contact-info">
+                <h3>Contact</h3>
+                <p>Email: <a href="mailto:officialskymas@gmail.com">officialskymas@gmail.com</a></p>
+                <p>Phone: <a href="tel:+39 389 645 9049">+39 389 645 9049</a></p>
+            </div>
+            <div id="footer-section" class="social-icons">
+                <h3>Follow Me</h3>
+                <a href="https://x.com/skymasdev" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="https://www.instagram.com/skymasdev/" target="_blank"><i
+                        class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/kevin-osayabamwen-9b06882b7/" target="_blank"><i
+                        class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/skymasdev" target="_blank"><i class="fa-brands fa-github"></i></a>
+            </div>
+            <div id="footer-section" class="quick-links">
+                <h3>Quick Links</h3>
+                <a href="#hero">Home</a> |
+                <a href="#about">About</a> |
+                <a href="#skill">Skill</a> |
+                <a href="#project">Projects</a> |
+                <a href="#contact">Contact</a>
+            </div>
         </div>
-
-
-        <div class="social-icons">
-            <a href="https://x.com/skymasdev" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
-            <a href="https://www.instagram.com/skymasdev/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-            <a href="https://www.linkedin.com/in/kevin-osayabamwen-9b06882b7/" target="_blank"><i
-                    class="fa-brands fa-linkedin"></i></a>
-            <a href="https://github.com/skymasdev" target="_blank"><i class="fa-brands fa-github"></i></a>
-        </div>
-    </footer> -->
-
-<footer class="footer">
-    <div class="footer-container">
-        <div id="footer-section" class="contact-info">
-            <h3>Contact</h3>
-            <p>Email: <a href="mailto:fficialskymas@gmail.com">officialskymas@gmail.com</a></p>
-            <p>Phone: <a href="tel:+39 389 645 9049">+39 389 645 9049</a></p>
-        </div>
-        <div id="footer-section" class="social-icons">
-            <h3>Follow Me</h3>
-            <a href="https://x.com/skymasdev" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
-            <a href="https://www.instagram.com/skymasdev/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-            <a href="https://www.linkedin.com/in/kevin-osayabamwen-9b06882b7/" target="_blank"><i
-                    class="fa-brands fa-linkedin"></i></a>
-            <a href="https://github.com/skymasdev" target="_blank"><i class="fa-brands fa-github"></i></a>
-        </div>
-        <div id="footer-section" class="quick-links">
-            <h3>Quick Links</h3>
-            <a href="#hero">Home</a> |
-            <a href="#about">About</a> |
-            <a href="#skill">Skill</a> |
-            <a href="#project">Projects</a> |
-            <a href="#contact">Contact</a>
-        </div>
-    </div>
-    <p class="copyright">© 2025 Kevin Dixon. </p>
-</footer>
+        <p class="copyright">© 2025 Kevin Dixon. </p>
+    </footer>
 
     <script src="script.js"></script>
-    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
-
 </body>
 
 </html>
