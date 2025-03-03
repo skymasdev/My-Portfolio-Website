@@ -285,7 +285,7 @@ nav {
 .card-content .btn:hover {
   background-color: transparent;
   color: #2c3e50;
-  border: solid #2c3e50;
+  outline: solid #2c3e50;
 }
 
 .contact-section {
