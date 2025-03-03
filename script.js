@@ -41,3 +41,14 @@ function type() {
 
 // Start the typewriter effect
 type();
+
+// Toast Notifcaton for Form Submittion
+ document.getElementById('myForm').addEventListener('submit', function (e) {
+   e.preventDefault();
+   let toast = document.getElementById('toast');
+   toast.classList.add('show');
+   setTimeout(() => {
+     toast.classList.remove('show');
+   }, 3000);
+ });
+
