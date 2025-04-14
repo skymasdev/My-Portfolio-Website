@@ -41,7 +41,7 @@ This portfolio website is designed to highlight my expertise in web development.
 
 ## Usage
 - Click on the navigation links to smoothly scroll to different sections.
-- View my projects and access the source code on GitHub.
+- View my projects and access the website.
 - Use the contact form to reach out to me.
 
 ## Contact
